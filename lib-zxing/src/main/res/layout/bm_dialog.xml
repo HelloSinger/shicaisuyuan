@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="540px"
+    android:layout_height="90px"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="540px"
+        android:layout_height="90px"
+        android:background="@drawable/bg_toast"
+        android:gravity="center"
+        android:text="扫描工作走神了，再扫描一次吧！"
+        android:textColor="#FFFFFF"
+        android:textSize="24px" />
+
+
+</LinearLayout>

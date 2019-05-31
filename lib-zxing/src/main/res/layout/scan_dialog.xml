@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="743px"
+    android:layout_height="487px"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="90px"
+        android:layout_height="84px"
+        android:layout_marginLeft="328px"
+        android:layout_marginTop="91px"
+        android:background="@drawable/scan_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72px"
+        android:text="扫描二维码不是食联诚信溯源平台"
+        android:textColor="#0e1624"
+        android:textSize="20px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2px"
+        android:text="专属“溯源二维码”。"
+        android:textColor="#0e1624"
+        android:textSize="20px" />
+
+    <View
+        android:layout_width="743px"
+        android:layout_height="2px"
+        android:layout_marginTop="53px"
+        android:background="#DFDFDF" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="183px"
+        android:layout_height="58px"
+      android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38px"
+        android:background="#00CE9B"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="20px" />
+
+</LinearLayout>

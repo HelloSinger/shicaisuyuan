@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="hardware"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="1790px"
+        android:layerType="software" />
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_loding" />
+
+    <com.uuzuche.lib_zxing.LoadingProgress
+        android:id="@+id/loadingprogress"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/below_bg"
+
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@drawable/back" />
+    </LinearLayout>
+
+</RelativeLayout>

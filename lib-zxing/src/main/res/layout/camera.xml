@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_zxing_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="384px"
+        android:layout_marginTop="442px"
+        android:text="将食联诚信溯源平台专属的"
+        android:textColor="#FFFFFF"
+        android:textSize="24px" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="345px"
+        android:layout_marginTop="484px"
+        android:text="“溯源二维码”对准扫描框，"
+        android:textColor="#00CF9B"
+        android:textSize="32px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="408px"
+        android:layout_marginTop="534px"
+        android:text="展示产品溯源信息。"
+        android:textColor="#FFFFFF"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="1311px"
+        android:text="图层识别失败原因："
+        android:textColor="#FFFFFF"
+
+        android:textSize="24px"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="1351px"
+        android:text="1.当前无线网络没有正常连接或网络连接信号较弱；"
+        android:textColor="#B4B4B4"
+        android:textSize="24px"
+
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="1391px"
+        android:text="2.因距离或光线太暗导致扫描图像不清晰；"
+        android:textColor="#B4B4B4"
+        android:textSize="24px"
+
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="1431px"
+        android:text="3.所扫描二维码，非食联诚信溯源平台定制“溯源二维码”。"
+        android:textColor="#B4B4B4"
+        android:textSize="24px"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="45px"
+        android:background="@drawable/back" />
+
+
+</RelativeLayout>
