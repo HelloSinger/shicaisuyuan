@@ -3,7 +3,7 @@
     android:layout_width="743px"
     android:layout_height="487px"
     android:layout_gravity="center"
-    android:background="#FFFFFF"
+    android:background="#191919"
 
     android:orientation="vertical">
 
@@ -20,7 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="72px"
         android:text="扫描二维码不是食联诚信溯源平台"
-        android:textColor="#0e1624"
+        android:textColor="#FEFEFE"
         android:textSize="20px" />
 
     <TextView
@@ -29,13 +29,14 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="2px"
         android:text="专属“溯源二维码”。"
-        android:textColor="#0e1624"
+        android:textColor="#FEFEFE"
         android:textSize="20px" />
 
     <View
         android:layout_width="743px"
         android:layout_height="2px"
         android:layout_marginTop="53px"
+        android:visibility="invisible"
         android:background="#DFDFDF" />
 
     <Button
@@ -44,9 +45,9 @@
         android:layout_height="58px"
       android:layout_gravity="center_horizontal"
         android:layout_marginTop="38px"
-        android:background="#00CE9B"
+        android:background="@drawable/buttonstyle"
         android:text="确定"
-        android:textColor="#FFFFFF"
+        android:textColor="#E9BD85"
         android:textSize="20px" />
 
 </LinearLayout>

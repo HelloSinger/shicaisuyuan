@@ -23,7 +23,7 @@
         android:layout_marginLeft="345px"
         android:layout_marginTop="484px"
         android:text="“溯源二维码”对准扫描框，"
-        android:textColor="#00CF9B"
+        android:textColor="#E9BD85"
         android:textSize="32px" />
 
     <TextView

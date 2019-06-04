@@ -5,8 +5,9 @@
 
     <SurfaceView
         android:id="@+id/preview_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="540px"
+        android:layout_height="540px"
+        android:layout_marginTop="12px"
         android:layout_gravity="center" />
 
     <com.uuzuche.lib_zxing.view.ViewfinderView

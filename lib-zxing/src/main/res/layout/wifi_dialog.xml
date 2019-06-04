@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="743px"
     android:layout_height="487px"
-    android:background="#FFFFFF"
+    android:background="#191919"
     android:layout_gravity="center"
 
     android:orientation="vertical">
@@ -20,7 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="56px"
         android:text="请先链接网络，再开启溯源之旅。"
-        android:textColor="#0E1624"
+        android:textColor="#FEFEFE"
         android:textSize="20px" />
 
 
@@ -28,6 +28,7 @@
         android:layout_width="743px"
         android:layout_height="2px"
         android:layout_marginTop="83px"
+        android:visibility="invisible"
         android:background="#DFDFDF" />
 
 
@@ -38,9 +39,9 @@
             android:layout_height="58px"
             android:layout_marginLeft="280px"
             android:layout_marginTop="33px"
-            android:background="#00CE9B"
+            android:background="@drawable/buttonstyle"
             android:text="确定"
-            android:textColor="#FFFFFF"
+            android:textColor="#E9BD85"
             android:textSize="20px" />
 
 </LinearLayout>
