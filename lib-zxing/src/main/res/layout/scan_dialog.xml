@@ -3,22 +3,22 @@
     android:layout_width="743px"
     android:layout_height="487px"
     android:layout_gravity="center"
-    android:background="#000000"
+    android:background="#191919"
 
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="90px"
-        android:layout_height="84px"
-        android:layout_marginLeft="328px"
-        android:layout_marginTop="91px"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="82px"
         android:background="@drawable/scan_title" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="72px"
+        android:layout_marginTop="58px"
         android:text="扫描二维码不是食联诚信溯源平台"
         android:textColor="#FEFEFE"
         android:textSize="20px" />
@@ -32,19 +32,13 @@
         android:textColor="#FEFEFE"
         android:textSize="20px" />
 
-    <View
-        android:layout_width="743px"
-        android:layout_height="2px"
-        android:layout_marginTop="53px"
-        android:visibility="invisible"
-        android:background="#DFDFDF" />
 
     <Button
         android:id="@+id/btn_sure"
         android:layout_width="183px"
         android:layout_height="58px"
-      android:layout_gravity="center_horizontal"
-        android:layout_marginTop="38px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="63px"
         android:background="@drawable/buttonstyle"
         android:text="确定"
         android:textColor="#E9BD85"

@@ -3,8 +3,14 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="AppTheme1" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!-- API 14 theme customizations can go here. -->
         <item name="android:actionBarStyle">@style/my_actionbar_style</item>

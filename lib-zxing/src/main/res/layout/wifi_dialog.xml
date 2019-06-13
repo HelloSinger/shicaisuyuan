@@ -2,46 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="743px"
     android:layout_height="487px"
-    android:background="#000000"
     android:layout_gravity="center"
+    android:background="#191919"
 
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="200px"
-        android:layout_height="134px"
-        android:layout_marginLeft="271px"
-        android:layout_marginTop="57px"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="84px"
         android:background="@drawable/wifi_title" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="56px"
-        android:text="请先链接网络，再开启溯源之旅。"
+        android:layout_marginTop="74px"
+        android:text="请先连接网络，再开启溯源之旅。"
         android:textColor="#FEFEFE"
         android:textSize="20px" />
 
 
-    <View
-        android:layout_width="743px"
-        android:layout_height="2px"
-        android:layout_marginTop="83px"
-        android:visibility="invisible"
-        android:background="#DFDFDF" />
 
 
-
-        <Button
-            android:id="@+id/btn_sure"
-            android:layout_width="183px"
-            android:layout_height="58px"
-            android:layout_marginLeft="280px"
-            android:layout_marginTop="33px"
-            android:background="@drawable/buttonstyle"
-            android:text="确定"
-            android:textColor="#E9BD85"
-            android:textSize="20px" />
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="183px"
+        android:layout_height="58px"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="94px"
+        android:background="@drawable/buttonstyle"
+        android:text="确定"
+        android:textColor="#E9BD85"
+        android:textSize="20px" />
 
 </LinearLayout>
