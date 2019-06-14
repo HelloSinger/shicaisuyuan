@@ -4,9 +4,14 @@
     android:layout_height="match_parent"
     android:layerType="hardware"
     android:orientation="vertical">
-
+<ImageView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:background="@drawable/below_bg"
+    android:layout_height="80px" />
     <WebView
         android:id="@+id/webView"
+        android:layout_below="@id/title"
         android:layout_width="match_parent"
         android:layout_height="1790px"
         android:layerType="software" />

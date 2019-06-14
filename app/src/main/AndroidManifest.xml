@@ -47,9 +47,11 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-    <user-permission android:name="android.permission.INTERNET"/>
+
+    <user-permission android:name="android.permission.INTERNET" />
     <application
         android:name="com.haier.recognition.MApplication"
         android:allowBackup="true"
@@ -60,14 +62,17 @@
         <activity android:name="com.uuzuche.lib_zxing.activity.CaptureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.haier.recognition.mainAc" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="com.haier.recognition.SecondActivity" />
         <activity android:name="com.haier.recognition.ThreeActivity" />
         <activity android:name="com.haier.recognition.BaseActivity"></activity>
-        <activity android:name="com.haier.recognition.WebViewActivity"/>
+        <activity android:name="com.haier.recognition.WebViewActivity" />
     </application>
 
     <uses-permission android:name="android.permission.CAMERA" />
