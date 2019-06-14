@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
+
     <!--设置背景色-->
+
+
     <solid android:color="#191919" />
     <!--设置圆角-->
     <!--<padding-->
@@ -11,5 +14,8 @@
     <!--android:top="10dp"-->
     <!--/>-->
     <!--设置边框线的宽度和颜色-->
-    <stroke android:width="2px" android:color="#E9BD85" />
-</selector>
+    <stroke
+        android:width="2px"
+        android:color="#E9BD85" />
+
+</shape>
