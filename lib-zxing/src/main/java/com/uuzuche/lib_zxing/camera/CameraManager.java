@@ -119,8 +119,8 @@ public final class CameraManager {
     public void openDriver(SurfaceHolder holder) throws IOException {
         if (camera == null) {
 
-            Log.e("TAG", "数字: "+FindFrontCamera()+"");
-            camera = Camera.open(FindFrontCamera());
+//            Log.e("TAG", "数字: "+FindFrontCamera()+"");
+            camera = Camera.open(0);
             if (camera == null) {
                 throw new IOException();
             }
