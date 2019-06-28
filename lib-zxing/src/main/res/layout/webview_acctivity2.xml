@@ -9,11 +9,12 @@
     android:layout_width="match_parent"
     android:background="@drawable/below_bg"
     android:layout_height="80px" />
+
     <WebView
         android:id="@+id/webView"
-        android:layout_below="@id/title"
         android:layout_width="match_parent"
-        android:layout_height="1790px"
+        android:layout_height="1670px"
+        android:layout_below="@id/title"
         android:layerType="software" />
 
     <ImageView
@@ -33,7 +34,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130px"
+        android:layout_height="170px"
         android:layout_alignParentBottom="true"
         android:background="@drawable/below_bg"
 
@@ -41,8 +42,8 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="60px"
-            android:layout_height="60px"
+            android:layout_width="88px"
+            android:layout_height="88px"
             android:background="@drawable/back" />
     </LinearLayout>
 
