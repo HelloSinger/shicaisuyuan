@@ -99,9 +99,9 @@ public final class ViewfinderView extends View {
         CameraManager.FRAME_HEIGHT = (int) ta.getDimension(R.styleable.ViewfinderView_inner_height, DisplayUtil.screenWidthPx / 2);
 
         // 扫描框边角颜色
-        innercornercolor = ta.getColor(R.styleable.ViewfinderView_inner_corner_color, Color.parseColor("#E9BD85"));
+        innercornercolor = ta.getColor(R.styleable.ViewfinderView_inner_corner_color, Color.parseColor("#00CF9B"));
         // 扫描框边角长度
-        innercornerlength = (int) ta.getDimension(R.styleable.ViewfinderView_inner_corner_length, 64);
+        innercornerlength = (int) ta.getDimension(R.styleable.ViewfinderView_inner_corner_length, 45);
         // 扫描框边角宽度
         innercornerwidth = (int) ta.getDimension(R.styleable.ViewfinderView_inner_corner_width, 10);
 

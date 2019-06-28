@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="743px"
-    android:layout_height="487px"
+    android:layout_width="520px"
+    android:layout_height="320px"
     android:layout_gravity="center"
-    android:background="#191919"
-
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="70px"
-        android:layout_height="58px"
+        android:layout_width="199px"
+        android:layout_height="131px"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="84px"
+        android:layout_marginTop="24px"
         android:background="@drawable/wifi_title" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="74px"
+        android:layout_marginTop="21px"
         android:text="请先连接网络，再开启溯源之旅。"
-        android:textColor="#FEFEFE"
-        android:textSize="24px" />
-
-
+        android:textColor="#0E1624"
+        android:textSize="20px" />
 
 
     <Button
         android:id="@+id/btn_sure"
-        android:layout_width="220px"
-        android:layout_height="60px"
-        android:layout_marginLeft="280px"
-        android:layout_marginTop="94px"
-        android:background="@drawable/buttonstyle"
+        android:layout_width="160px"
+        android:layout_height="50px"
+        android:layout_marginLeft="180px"
+        android:gravity="center"
+        android:layout_marginTop="55px"
+        android:background="@drawable/button_bg"
         android:text="确定"
-        android:textColor="#E9BD85"
-        android:textSize="28px" />
+        android:textColor="#FFFFFF"
+        android:textSize="20px" />
 
 </LinearLayout>
