@@ -2,6 +2,7 @@ package com.uuzuche.lib_zxing.activity;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.Gravity;
@@ -18,6 +19,12 @@ public class ResultActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /**
+         * 设置为横屏
+         */
+        if (getRequestedOrientation() != ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
         setContentView(R.layout.result_activity);
         String from = getIntent().getStringExtra("from");
         if (from.equals("wifi")) {
@@ -37,7 +44,11 @@ public class ResultActivity extends Activity {
         }
 
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
 
+    }
 
     /**
      * 设置dialog位置

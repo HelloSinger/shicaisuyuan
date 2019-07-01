@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
@@ -41,11 +42,11 @@ public class CaptureActivity extends AppCompatActivity {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED){
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
 
-        }else{
+        } else {
             //否则去请求相机权限
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CAMERA},100);
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 100);
 
         }
         imageView = (ImageView) findViewById(R.id.iv_back);
@@ -80,6 +81,17 @@ public class CaptureActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        /**
+         * 设置为横屏
+         */
+        if (getRequestedOrientation() != ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void exitAPP1() {
         ActivityManager activityManager = (ActivityManager) this.getApplicationContext().getSystemService(Context.ACTIVITY_SERVICE);
@@ -105,19 +117,19 @@ public class CaptureActivity extends AppCompatActivity {
         @Override
         public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
 
-//            if (result.contains("http://hotc.haier.net") || result.contains("https://hotc.haier.net")) {
-                Intent intent = new Intent(CaptureActivity.this, WebViewActivity.class);
-                intent.putExtra("url", result);
-                Log.e("TAG", "二维码: " + result);
+            if (result.contains("http://hotc.haier.net") || result.contains("https://hotc.haier.net")) {
+            Intent intent = new Intent(CaptureActivity.this, WebViewActivity.class);
+            intent.putExtra("url", result);
+            Log.e("TAG", "二维码: " + result);
+            startActivity(intent);
+            finish();
+            } else {
+
+                Intent intent = new Intent(CaptureActivity.this, ResultActivity.class);
+                intent.putExtra("from", "error");
                 startActivity(intent);
                 finish();
-//            } else {
-//
-//                Intent intent = new Intent(CaptureActivity.this, ResultActivity.class);
-//                intent.putExtra("from", "error");
-//                startActivity(intent);
-//                finish();
-//            }
+            }
 
 
         }

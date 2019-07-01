@@ -10,7 +10,7 @@
         <activity
             android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
 
         <activity
