@@ -129,7 +129,7 @@ public class LoadingProgress extends View {
 
     private void paintPie(Canvas mCanvas) {
         mCanvas.rotate(this.degrees);
-        this.mPaint1.setColor(Color.parseColor("#E9BD85"));
+        this.mPaint1.setColor(Color.parseColor("#00CF9B"));
         this.mPaint2.setColor(Color.parseColor("#00ffffff"));
         if (this.extend) {
             mCanvas.drawArc(this.oval, this.startDegrees1, this.extendDegrees, false, this.mPaint1);
