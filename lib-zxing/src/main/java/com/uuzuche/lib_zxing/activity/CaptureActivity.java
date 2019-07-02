@@ -105,19 +105,19 @@ public class CaptureActivity extends AppCompatActivity {
         @Override
         public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
 
-//            if (result.contains("http://hotc.haier.net") || result.contains("https://hotc.haier.net")) {
+            if (result.contains("http://hotc.haier.net") || result.contains("https://hotc.haier.net")) {
                 Intent intent = new Intent(CaptureActivity.this, WebViewActivity.class);
                 intent.putExtra("url", result);
                 Log.e("TAG", "二维码: " + result);
                 startActivity(intent);
                 finish();
-//            } else {
-//
-//                Intent intent = new Intent(CaptureActivity.this, ResultActivity.class);
-//                intent.putExtra("from", "error");
-//                startActivity(intent);
-//                finish();
-//            }
+            } else {
+
+                Intent intent = new Intent(CaptureActivity.this, ResultActivity.class);
+                intent.putExtra("from", "error");
+                startActivity(intent);
+                finish();
+            }
 
 
         }

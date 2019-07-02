@@ -23,18 +23,18 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
-    signingConfigs {
-        debug {
-            storePassword 'haier123'
-            keyAlias 'haier'
-            keyPassword 'haier123'
-        }
-        release {
-            storePassword 'haier123'
-            keyAlias 'haier'
-            keyPassword 'haier123'
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            storePassword 'haier123'
+//            keyAlias 'haier'
+//            keyPassword 'haier123'
+//        }
+//        release {
+//            storePassword 'haier123'
+//            keyAlias 'haier'
+//            keyPassword 'haier123'
+//        }
+//    }
 }
 
 dependencies {
