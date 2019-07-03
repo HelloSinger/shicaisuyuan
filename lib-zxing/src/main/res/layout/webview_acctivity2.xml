@@ -36,8 +36,6 @@
         android:id="@+id/iv_back"
         android:layout_width="100px"
         android:layout_height="100px"
-        android:layout_marginTop="29px"
-        android:layout_marginLeft="30px"
         android:scaleType="centerInside"
         android:layout_alignParentTop="true"
         android:src="@drawable/back" />
