@@ -122,7 +122,7 @@ final class CameraConfigurationManager {
 
         if (previewSizeValueString != null) {
             Log.d(TAG, "preview-size-values parameter: " + previewSizeValueString);
-            cameraResolution = CameraUtils.findBestPreviewSizeValue(parameters, screenResolution);
+            cameraResolution =findBestPreviewSizeValue(previewSizeValueString, screenResolution);
         }
 
         if (cameraResolution == null) {
