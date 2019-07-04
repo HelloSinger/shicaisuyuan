@@ -93,10 +93,10 @@ public final class ViewfinderView extends View {
         }
 
         // 扫描框的宽度
-        CameraManager.FRAME_WIDTH = (int) ta.getDimension(R.styleable.ViewfinderView_inner_width, DisplayUtil.screenWidthPx / 2);
+        CameraManager.FRAME_WIDTH = (int) ta.getDimension(R.styleable.ViewfinderView_inner_width, 530);
 
         // 扫描框的高度
-        CameraManager.FRAME_HEIGHT = (int) ta.getDimension(R.styleable.ViewfinderView_inner_height, DisplayUtil.screenWidthPx / 2);
+        CameraManager.FRAME_HEIGHT = (int) ta.getDimension(R.styleable.ViewfinderView_inner_height, 500);
 
         // 扫描框边角颜色
         innercornercolor = ta.getColor(R.styleable.ViewfinderView_inner_corner_color, Color.parseColor("#E9BD85"));
@@ -115,7 +115,7 @@ public final class ViewfinderView extends View {
         // 扫描速度
         SCAN_VELOCITY = ta.getInt(R.styleable.ViewfinderView_inner_scan_speed, 10);
 
-        isCircle = ta.getBoolean(R.styleable.ViewfinderView_inner_scan_iscircle, true);
+        isCircle = ta.getBoolean(R.styleable.ViewfinderView_inner_scan_iscircle, false);
 
         ta.recycle();
     }
@@ -203,7 +203,7 @@ public final class ViewfinderView extends View {
         } else {
             scanLineTop += SCAN_VELOCITY;
         }
-        Rect scanRect = new Rect(frame.left, scanLineTop, frame.right,
+        Rect scanRect = new Rect(frame.left+18, scanLineTop, frame.right-18,
                 scanLineTop + 30);
         canvas.drawBitmap(scanLight, null, scanRect, paint);
     }
@@ -237,25 +237,25 @@ public final class ViewfinderView extends View {
         int corLength = innercornerlength;
 
         // 左上角
-        canvas.drawRect(frame.left, frame.top, frame.left + corWidth, frame.top
-                + corLength, paint);
-        canvas.drawRect(frame.left, frame.top, frame.left
-                + corLength, frame.top + corWidth, paint);
-        // 右上角
-        canvas.drawRect(frame.right - corWidth, frame.top, frame.right,
-                frame.top + corLength, paint);
-        canvas.drawRect(frame.right - corLength, frame.top,
-                frame.right, frame.top + corWidth, paint);
-        // 左下角
-        canvas.drawRect(frame.left, frame.bottom - corLength,
-                frame.left + corWidth, frame.bottom, paint);
-        canvas.drawRect(frame.left, frame.bottom - corWidth, frame.left
-                + corLength, frame.bottom, paint);
-        // 右下角
-        canvas.drawRect(frame.right - corWidth, frame.bottom - corLength,
-                frame.right, frame.bottom, paint);
-        canvas.drawRect(frame.right - corLength, frame.bottom - corWidth,
-                frame.right, frame.bottom, paint);
+//        canvas.drawRect(frame.left, frame.top, frame.left + corWidth, frame.top
+//                + corLength, paint);
+//        canvas.drawRect(frame.left, frame.top, frame.left
+//                + corLength, frame.top + corWidth, paint);
+//        // 右上角
+//        canvas.drawRect(frame.right - corWidth, frame.top, frame.right,
+//                frame.top + corLength, paint);
+//        canvas.drawRect(frame.right - corLength, frame.top,
+//                frame.right, frame.top + corWidth, paint);
+//        // 左下角
+//        canvas.drawRect(frame.left, frame.bottom - corLength,
+//                frame.left + corWidth, frame.bottom, paint);
+//        canvas.drawRect(frame.left, frame.bottom - corWidth, frame.left
+//                + corLength, frame.bottom, paint);
+//        // 右下角
+//        canvas.drawRect(frame.right - corWidth, frame.bottom - corLength,
+//                frame.right, frame.bottom, paint);
+//        canvas.drawRect(frame.right - corLength, frame.bottom - corWidth,
+//                frame.right, frame.bottom, paint);
     }
 
 

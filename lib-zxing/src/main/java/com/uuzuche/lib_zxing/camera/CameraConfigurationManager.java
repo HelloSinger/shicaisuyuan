@@ -24,6 +24,8 @@ import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
 
+import com.uuzuche.lib_zxing.utils.CameraUtils;
+
 import java.util.regex.Pattern;
 
 final class CameraConfigurationManager {
@@ -63,8 +65,8 @@ final class CameraConfigurationManager {
         screenResolutionForCamera.y = screenResolution.y;
         // preview size is always something like 480*320, other 320*480
 //        if (screenResolution.x < screenResolution.y) {
-            screenResolutionForCamera.x =540;
-            screenResolutionForCamera.y = 540;
+            screenResolutionForCamera.x =1920;
+            screenResolutionForCamera.y = 1080;
 //        }
         Log.i("#########", "screenX:" + screenResolutionForCamera.x + "   screenY:" + screenResolutionForCamera.y);
         cameraResolution = getCameraResolution(parameters, screenResolutionForCamera);
@@ -82,7 +84,8 @@ final class CameraConfigurationManager {
     void setDesiredCameraParameters(Camera camera) {
         Camera.Parameters parameters = camera.getParameters();
         Log.d(TAG, "Setting preview size: " + cameraResolution);
-        parameters.setPreviewSize(cameraResolution.x, cameraResolution.y);
+//        parameters.setPreviewSize(cameraResolution.x, cameraResolution.y);
+        parameters.setPreviewSize(1920,1080);
         setFlash(parameters);
         setZoom(parameters);
         //setSharpness(parameters);
@@ -119,7 +122,7 @@ final class CameraConfigurationManager {
 
         if (previewSizeValueString != null) {
             Log.d(TAG, "preview-size-values parameter: " + previewSizeValueString);
-            cameraResolution = findBestPreviewSizeValue(previewSizeValueString, screenResolution);
+            cameraResolution = CameraUtils.findBestPreviewSizeValue(parameters, screenResolution);
         }
 
         if (cameraResolution == null) {
@@ -128,7 +131,7 @@ final class CameraConfigurationManager {
                     (screenResolution.x >> 3) << 3,
                     (screenResolution.y >> 3) << 3);
         }
-
+        CameraUtils.setFocus(parameters,true,true,true);
         return cameraResolution;
     }
 

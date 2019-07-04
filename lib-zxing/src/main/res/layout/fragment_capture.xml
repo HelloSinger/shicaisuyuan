@@ -6,15 +6,16 @@
 
     <SurfaceView
         android:id="@+id/preview_view"
-        android:layout_width="540px"
-        android:layout_height="540px"
-        android:layout_gravity="center" />
+        android:layout_width="match_parent"
+        android:layout_height="720px"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_scan" />
 
     <com.uuzuche.lib_zxing.view.ViewfinderView
         android:id="@+id/viewfinder_view"
-        android:layout_marginTop="16px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+
+        android:visibility="visible" />
 
 </FrameLayout>
