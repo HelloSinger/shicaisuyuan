@@ -2,13 +2,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center">
+  >
 
     <SurfaceView
         android:id="@+id/preview_view"
         android:layout_width="match_parent"
         android:layout_height="720px"
-        android:layout_gravity="center"
+        android:layout_marginTop="241px"
         android:background="@drawable/bg_scan" />
 
     <com.uuzuche.lib_zxing.view.ViewfinderView

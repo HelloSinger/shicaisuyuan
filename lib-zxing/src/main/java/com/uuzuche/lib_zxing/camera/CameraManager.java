@@ -121,10 +121,12 @@ public final class CameraManager {
 
             Log.e("TAG", "数字: "+FindFrontCamera()+"");
             camera = Camera.open(FindFrontCamera());
+            AutoFocusCallback mAutoFocusCallback = new AutoFocusCallback();
             if (camera == null) {
                 throw new IOException();
             }
             camera.setPreviewDisplay(holder);
+            Log.e("TAG", "是否支持变焦: "+camera.getParameters().isSmoothZoomSupported()+"");
 
             if (!initialized) {
                 initialized = true;

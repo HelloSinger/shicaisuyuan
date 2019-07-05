@@ -131,15 +131,15 @@ public final class ViewfinderView extends View {
 
         // Draw the exterior (i.e. outside the framing rect) darkened
         paint.setColor(resultBitmap != null ? resultColor : maskColor);
-        canvas.drawRect(0, 0, width, frame.top, paint);
-        canvas.drawRect(0, frame.top, frame.left, frame.bottom + 1, paint);
-        canvas.drawRect(frame.right + 1, frame.top, width, frame.bottom + 1, paint);
-        canvas.drawRect(0, frame.bottom + 1, width, height, paint);
+//        canvas.drawRect(0, 0, width, frame.top, paint);
+//        canvas.drawRect(0, frame.top, frame.left, frame.bottom + 1, paint);
+//        canvas.drawRect(frame.right + 1, frame.top, width, frame.bottom + 1, paint);
+//        canvas.drawRect(0, frame.bottom + 1, width, height, paint);
 
         if (resultBitmap != null) {
             // Draw the opaque result bitmap over the scanning rectangle
             paint.setAlpha(OPAQUE);
-            canvas.drawBitmap(resultBitmap, frame.left, frame.top, paint);
+            canvas.drawBitmap(resultBitmap,238,381, paint);
         } else {
 
             drawFrameBounds(canvas, frame);
@@ -195,11 +195,11 @@ public final class ViewfinderView extends View {
     private void drawScanLight(Canvas canvas, Rect frame) {
 
         if (scanLineTop == 0) {
-            scanLineTop = frame.top;
+            scanLineTop =381;
         }
 
-        if (scanLineTop >= frame.bottom - 30) {
-            scanLineTop = frame.top;
+        if (scanLineTop >= 841 - 30) {
+            scanLineTop =381;
         } else {
             scanLineTop += SCAN_VELOCITY;
         }
