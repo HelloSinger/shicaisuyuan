@@ -49,10 +49,10 @@ public class CaptureActivity extends AppCompatActivity {
         git_2 = (ImageView) findViewById(R.id.git_2);
         Glide.with(CaptureActivity.this).load(R.drawable.arrow)
 
-                .diskCacheStrategy(DiskCacheStrategy.ALL).into(git_1);
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE).into(git_1);
         Glide.with(CaptureActivity.this).load(R.drawable.arrow)
 
-                .diskCacheStrategy(DiskCacheStrategy.ALL).into(git_2);
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE).into(git_2);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
 
         } else {
