@@ -6,14 +6,14 @@
     <FrameLayout
         android:id="@+id/fl_zxing_container"
         android:layout_width="match_parent"
-        android:background="@drawable/small_bg"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@drawable/small_bg" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="193px"
-        android:layout_marginTop="327px"
+        android:layout_marginTop="243px"
         android:text="将食联诚信溯源平台专属的"
         android:textColor="#FFFFFF"
         android:textSize="24px" />
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="158px"
-        android:layout_marginTop="370px"
+        android:layout_marginTop="286px"
         android:text="“溯源二维码”对准扫描框，"
         android:textColor="#00CF9B"
         android:textSize="30px" />
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="229px"
-        android:layout_marginTop="419px"
+        android:layout_marginTop="335px"
         android:text="展示产品溯源信息。"
         android:textColor="#FFFFFF"
         android:textSize="24px" />
@@ -84,9 +84,47 @@
         android:id="@+id/iv_back"
         android:layout_width="100px"
         android:layout_height="100px"
-        android:scaleType="centerInside"
         android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
         android:src="@drawable/back" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="165px"
+        android:layout_marginTop="496px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="58px"
+            android:layout_height="60px"
+            android:background="@drawable/scan" />
+
+        <ImageView
+            android:id="@+id/git_1"
+            android:layout_width="58px"
+            android:layout_height="30px"
+            android:layout_marginLeft="23px" />
+
+        <ImageView
+            android:layout_marginLeft="20px"
+            android:layout_width="58px"
+            android:layout_height="60px"
+            android:background="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/git_2"
+            android:layout_width="58px"
+            android:layout_height="30px"
+            android:layout_marginLeft="23px" />
+
+        <ImageView
+            android:layout_width="58px"
+            android:layout_height="60px"
+            android:layout_marginLeft="23px"
+            android:background="@drawable/trace" />
+
+
+    </LinearLayout>
 </RelativeLayout>

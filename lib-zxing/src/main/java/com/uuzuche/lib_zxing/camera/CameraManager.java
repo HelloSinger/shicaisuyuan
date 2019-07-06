@@ -37,9 +37,9 @@ public final class CameraManager {
 
     private static final String TAG = CameraManager.class.getSimpleName();
 
-    public static int FRAME_WIDTH = -1;
-    public static int FRAME_HEIGHT = -1;
-    public static int FRAME_MARGINTOP = -1;
+    public static int FRAME_WIDTH = 480;
+    public static int FRAME_HEIGHT = 480;
+    public static int FRAME_MARGINTOP = 160;
 
     private static CameraManager cameraManager;
 

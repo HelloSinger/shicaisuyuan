@@ -21,6 +21,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.uuzuche.lib_zxing.BMToastUtil;
 import com.uuzuche.lib_zxing.R;
 
@@ -35,13 +37,22 @@ import java.util.List;
 public class CaptureActivity extends AppCompatActivity {
 
     private ImageView imageView;
-
+    private ImageView git_1;
+    private ImageView git_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
+        git_1 = (ImageView) findViewById(R.id.git_1);
+        git_2 = (ImageView) findViewById(R.id.git_2);
+        Glide.with(CaptureActivity.this).load(R.drawable.arrow)
+
+                .diskCacheStrategy(DiskCacheStrategy.ALL).into(git_1);
+        Glide.with(CaptureActivity.this).load(R.drawable.arrow)
+
+                .diskCacheStrategy(DiskCacheStrategy.ALL).into(git_2);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
 
         } else {
@@ -118,11 +129,11 @@ public class CaptureActivity extends AppCompatActivity {
         public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
 
             if (result.contains("http://hotc.haier.net") || result.contains("https://hotc.haier.net")) {
-            Intent intent = new Intent(CaptureActivity.this, WebViewActivity.class);
-            intent.putExtra("url", result);
-            Log.e("TAG", "二维码: " + result);
-            startActivity(intent);
-            finish();
+                Intent intent = new Intent(CaptureActivity.this, WebViewActivity.class);
+                intent.putExtra("url", result);
+                Log.e("TAG", "二维码: " + result);
+                startActivity(intent);
+                finish();
             } else {
 
                 Intent intent = new Intent(CaptureActivity.this, ResultActivity.class);
