@@ -37,9 +37,9 @@ public final class CameraManager {
 
     private static final String TAG = CameraManager.class.getSimpleName();
 
-    public static int FRAME_WIDTH = 480;
-    public static int FRAME_HEIGHT = 480;
-    public static int FRAME_MARGINTOP = 160;
+    public static int FRAME_WIDTH = -1;
+    public static int FRAME_HEIGHT = -1;
+    public static int FRAME_MARGINTOP = -1;
 
     private static CameraManager cameraManager;
 
@@ -322,8 +322,8 @@ public final class CameraManager {
                 // This format has never been seen in the wild, but is compatible as we only care
                 // about the Y channel, so allow it.
             case PixelFormat.YCbCr_422_SP:
-                return new PlanarYUVLuminanceSource(data, width, height, rect.left, rect.top,
-                        rect.width(), rect.height());
+                return new PlanarYUVLuminanceSource(data, width, height, 0, 0, width, height);
+
             default:
                 // The Samsung Moment incorrectly uses this variant instead of the 'sp' version.
                 // Fortunately, it too has all the Y data up front, so we can read it.
