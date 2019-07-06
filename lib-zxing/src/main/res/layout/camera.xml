@@ -11,9 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="食材溯源"
         android:layout_marginLeft="468px"
         android:layout_marginTop="130px"
+        android:text="食材溯源"
         android:textColor="#FFFFFF"
         android:textSize="36px" />
 
@@ -100,6 +100,101 @@
         android:background="@drawable/back" />
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="86px"
+            android:layout_height="86px"
+            android:background="@drawable/scan" />
+        <ImageView
+            android:layout_width="86px"
+            android:layout_height="86px"
+            android:background="@drawable/scan" />
+        <ImageView
+            android:layout_width="86px"
+            android:layout_height="86px"
+            android:background="@drawable/scan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="142px"
+        android:layout_marginTop="1433px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找到"
+                android:textColor="#FFFFFF"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="食联专属二维码"
+                android:textColor="#FFFFFF"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="158px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对准"
+                android:textColor="#FFFFFF"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="冰箱摄像头扫码"
+                android:textColor="#FFFFFF"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="158px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="展示"
+                android:textColor="#FFFFFF"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="产品溯源信息"
+                android:textColor="#FFFFFF"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>
