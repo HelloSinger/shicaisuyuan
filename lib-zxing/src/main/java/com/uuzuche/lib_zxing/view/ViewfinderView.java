@@ -115,7 +115,7 @@ public final class ViewfinderView extends View {
         // 扫描速度
         SCAN_VELOCITY = ta.getInt(R.styleable.ViewfinderView_inner_scan_speed, 10);
 
-        isCircle = ta.getBoolean(R.styleable.ViewfinderView_inner_scan_iscircle, true);
+        isCircle = ta.getBoolean(R.styleable.ViewfinderView_inner_scan_iscircle, false);
 
         ta.recycle();
     }
