@@ -103,19 +103,40 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginLeft="183px"
+        android:layout_marginTop="1305px"
+        android:gravity="center_vertical">
+
+        <ImageView
+
+            android:layout_width="86px"
+            android:layout_height="86px"
+            android:background="@drawable/scan" />
+
+        <ImageView
+            android:id="@+id/iv_arrow1"
+            android:layout_width="80px"
+            android:layout_height="33px"
+            android:layout_marginLeft="86px"
+            android:background="@drawable/arrow" />
 
         <ImageView
             android:layout_width="86px"
             android:layout_height="86px"
+            android:layout_marginLeft="85px"
             android:background="@drawable/scan" />
+
+        <ImageView
+            android:id="@+id/iv_arrow2"
+            android:layout_width="80px"
+            android:layout_height="33px"
+            android:layout_marginLeft="86px"
+            android:background="@drawable/arrow" />
+
         <ImageView
             android:layout_width="86px"
             android:layout_height="86px"
-            android:background="@drawable/scan" />
-        <ImageView
-            android:layout_width="86px"
-            android:layout_height="86px"
+            android:layout_marginLeft="71px"
             android:background="@drawable/scan" />
 
     </LinearLayout>

@@ -34,7 +34,8 @@ import java.util.List;
 public class CaptureActivity extends AppCompatActivity {
 
     private ImageView imageView;
-
+    private ImageView iv_arrow1;
+    private ImageView iv_arrow2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,7 @@ public class CaptureActivity extends AppCompatActivity {
                 finish();
             }
         });
+        iv_arrow1 = (ImageView) findViewById(R.id.iv_arrow1);
 
         if (!isNetworkAvailable()) {
             Intent intent = new Intent(this, ResultActivity.class);
