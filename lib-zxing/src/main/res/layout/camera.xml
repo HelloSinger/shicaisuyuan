@@ -117,8 +117,7 @@
             android:id="@+id/iv_arrow1"
             android:layout_width="80px"
             android:layout_height="33px"
-            android:layout_marginLeft="86px"
-            android:background="@drawable/arrow" />
+            android:layout_marginLeft="86px" />
 
         <ImageView
             android:layout_width="86px"
@@ -130,8 +129,7 @@
             android:id="@+id/iv_arrow2"
             android:layout_width="80px"
             android:layout_height="33px"
-            android:layout_marginLeft="86px"
-            android:background="@drawable/arrow" />
+            android:layout_marginLeft="86px" />
 
         <ImageView
             android:layout_width="86px"

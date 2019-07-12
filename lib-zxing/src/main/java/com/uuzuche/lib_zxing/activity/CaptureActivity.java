@@ -20,6 +20,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.uuzuche.lib_zxing.BMToastUtil;
 import com.uuzuche.lib_zxing.R;
 
@@ -57,7 +59,13 @@ public class CaptureActivity extends AppCompatActivity {
             }
         });
         iv_arrow1 = (ImageView) findViewById(R.id.iv_arrow1);
+        iv_arrow2 = (ImageView) findViewById(R.id.iv_arrow2);
+        Glide.with(CaptureActivity.this).load(R.drawable.arrow)
 
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE).into(iv_arrow1);
+        Glide.with(CaptureActivity.this).load(R.drawable.arrow)
+
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE).into(iv_arrow2);
         if (!isNetworkAvailable()) {
             Intent intent = new Intent(this, ResultActivity.class);
             intent.putExtra("from", "wifi");
