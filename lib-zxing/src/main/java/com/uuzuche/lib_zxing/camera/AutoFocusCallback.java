@@ -36,6 +36,7 @@ public final class AutoFocusCallback implements Camera.AutoFocusCallback {
     }
 
     public void onAutoFocus(boolean success, Camera camera) {
+        Log.d(TAG, "聚焦结果" + success);
         if (autoFocusHandler != null) {
             Message message = autoFocusHandler.obtainMessage(autoFocusMessage, success);
             autoFocusHandler.sendMessageDelayed(message, AUTOFOCUS_INTERVAL_MS);
