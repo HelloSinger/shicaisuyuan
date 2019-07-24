@@ -123,7 +123,7 @@
             android:layout_width="86px"
             android:layout_height="86px"
             android:layout_marginLeft="85px"
-            android:background="@drawable/scan" />
+            android:background="@drawable/camera" />
 
         <ImageView
             android:id="@+id/iv_arrow2"
@@ -135,7 +135,7 @@
             android:layout_width="86px"
             android:layout_height="86px"
             android:layout_marginLeft="71px"
-            android:background="@drawable/scan" />
+            android:background="@drawable/trace" />
 
     </LinearLayout>
 
