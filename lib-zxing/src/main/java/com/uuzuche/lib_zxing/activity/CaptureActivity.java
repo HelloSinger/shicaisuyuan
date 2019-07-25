@@ -56,6 +56,7 @@ public class CaptureActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                System.exit(0);
             }
         });
         iv_arrow1 = (ImageView) findViewById(R.id.iv_arrow1);

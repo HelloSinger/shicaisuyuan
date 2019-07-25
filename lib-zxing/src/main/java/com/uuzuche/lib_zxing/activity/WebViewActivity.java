@@ -37,6 +37,7 @@ public class WebViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                System.exit(0);
             }
         });
         Intent intent = getIntent();

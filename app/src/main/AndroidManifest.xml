@@ -69,10 +69,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.haier.recognition.SecondActivity" />
-        <activity android:name="com.haier.recognition.ThreeActivity" />
-        <activity android:name="com.haier.recognition.BaseActivity"></activity>
-        <activity android:name="com.haier.recognition.WebViewActivity" />
     </application>
 
     <uses-permission android:name="android.permission.CAMERA" />
