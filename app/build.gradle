@@ -1,6 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    signingConfigs {
+        release {
+            storeFile file("./keystore/shicaisuyuan.jks")
+            storePassword 'haier123'
+            keyAlias 'haier'
+            keyPassword 'haier123'
+        }
+        debug {
+            storeFile file("./keystore/shicaisuyuan.jks")
+            storePassword 'haier123'
+            keyAlias 'haier'
+            keyPassword 'haier123'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
     defaultConfig {

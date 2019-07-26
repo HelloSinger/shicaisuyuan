@@ -6,7 +6,7 @@
 
     <SurfaceView
         android:id="@+id/preview_view"
-        android:layout_width="480px"
+        android:layout_width="800px"
         android:layout_height="480px"
         android:layout_marginLeft="649px"
         android:layout_marginTop="160px" />
@@ -19,4 +19,10 @@
         app:inner_width="480px"
         app:inner_height="480px" />
 
+    <ImageView
+        android:background="@drawable/small_bg"
+        android:layout_width="320px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1128px"
+        />
 </FrameLayout>
