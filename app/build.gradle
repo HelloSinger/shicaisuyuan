@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.haier.recognition"
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion 22
         versionCode 1000002
         versionName "1.00.0002"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
