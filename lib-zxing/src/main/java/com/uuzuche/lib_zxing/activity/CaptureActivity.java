@@ -117,7 +117,7 @@ public class CaptureActivity extends AppCompatActivity {
         public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
 
             if (result.contains("http://hotc.haier.net") || result.contains("https://hotc.haier.net")) {
-                Intent intent = new Intent(CaptureActivity.this, WebViewActivity.class);
+                Intent intent = new Intent(CaptureActivity.this, WebViewActivityX5.class);
                 intent.putExtra("url", result);
                 Log.e("TAG", "二维码: " + result);
                 startActivity(intent);
