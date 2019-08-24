@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.uuzuche.lib_zxing">
+    package="com.haier.recognition">
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -75,7 +75,7 @@
         android:label="recognition"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+        <activity android:name=".activity.CaptureActivity"
             android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -14,10 +14,11 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.haier.recognition"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1000004
+        versionName "1.00.0004"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {

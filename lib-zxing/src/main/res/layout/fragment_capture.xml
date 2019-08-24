@@ -10,7 +10,7 @@
         android:layout_marginTop="241px"
         android:background="@drawable/bg_scan" />
 
-    <com.uuzuche.lib_zxing.view.ViewfinderView
+    <com.haier.recognition.view.ViewfinderView
         android:id="@+id/viewfinder_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

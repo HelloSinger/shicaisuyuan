@@ -10,7 +10,7 @@
     android:background="@drawable/below_bg"
     android:layout_height="80px" />
 
-    <com.uuzuche.lib_zxing.view.X5WebView
+    <com.haier.recognition.view.X5WebView
         android:id="@+id/x5webView"
         android:layout_width="match_parent"
         android:layout_height="1670px"
@@ -24,7 +24,7 @@
         android:background="@color/contents_text"
         android:visibility="visible"/>
 
-    <com.uuzuche.lib_zxing.LoadingProgress
+    <com.haier.recognition.LoadingProgress
         android:id="@+id/loadingprogress"
         android:layout_width="80px"
         android:layout_height="80px"
