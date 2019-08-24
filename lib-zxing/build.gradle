@@ -10,6 +10,21 @@ buildscript {
 }
 
 android {
+
+    signingConfigs {
+        release {
+            storeFile file("./keystore/shicaisuyuan.jks")
+            storePassword 'haier123'
+            keyAlias 'haier'
+            keyPassword 'haier123'
+        }
+        debug {
+            storeFile file("./keystore/shicaisuyuan.jks")
+            storePassword 'haier123'
+            keyAlias 'haier'
+            keyPassword 'haier123'
+        }
+    }
     lintOptions {
         checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
@@ -23,8 +38,8 @@ android {
         applicationId "com.haier.recognition"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 1000004
-        versionName "1.00.0004"
+        versionCode 1000005
+        versionName "1.00.0005"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
