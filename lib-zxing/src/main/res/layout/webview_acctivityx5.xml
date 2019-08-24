@@ -21,7 +21,8 @@
         android:id="@+id/iv_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/contents_text" />
+        android:background="@color/contents_text"
+        android:visibility="visible"/>
 
     <com.uuzuche.lib_zxing.LoadingProgress
         android:id="@+id/loadingprogress"

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.tencent.smtt.sdk.QbSdk;
+import com.tencent.smtt.utils.TbsLog;
+import com.tencent.smtt.utils.TbsLogClient;
 import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 
 import java.util.LinkedList;
@@ -78,9 +80,12 @@ public class MApplication extends Application {
             @Override
             public void onCoreInitFinished() {
                 // TODO Auto-generated method stub
+                Log.d("app", " onCoreInitFinished is " );
             }
         };
         //x5内核初始化接口
+//        QbSdk.setDownloadWithoutWifi(false);
+//        TbsLog.setTbsLogClient(new TbsLogClient(this));
         QbSdk.initX5Environment(getApplicationContext(),  cb);
     }
 
