@@ -82,7 +82,7 @@ public class MApplication extends Application {
             }
         };
         //x5内核初始化接口
-//        QbSdk.setDownloadWithoutWifi(false);
+        QbSdk.setDownloadWithoutWifi(true);
 //        TbsLog.setTbsLogClient(new TbsLogClient(this));
         QbSdk.initX5Environment(getApplicationContext(),  cb);
     }
