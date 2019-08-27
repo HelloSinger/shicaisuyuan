@@ -1,16 +1,50 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
+buildscript {
+
+    repositories{ jcenter()
+        google()
+    }
+
+    dependencies{ classpath "com.android.tools.build:gradle:2.3.3" }
+
+}
 
 android {
+
+    signingConfigs {
+//        release {
+//            storeFile file("./keystore/shicaisuyuan.jks")
+//            storePassword 'haier123'
+//            keyAlias 'haier'
+//            keyPassword 'haier123'
+//        }
+//        debug {
+//            storeFile file("./keystore/shicaisuyuan.jks")
+//            storePassword 'haier123'
+//            keyAlias 'haier'
+//            keyPassword 'haier123'
+//        }
+    }
+//    lintOptions {
+//        checkReleaseBuilds false
+//        // Or, if you prefer, you can continue to check for errors in release builds,
+//        // but continue the build even when errors are found:
+//        abortOnError false
+//    }
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
 
     defaultConfig {
+        applicationId "com.haier.recognition"
         minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 22
+        versionCode 1000005
+        versionName "1.00.0005"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
 
     }
     buildTypes {
@@ -18,6 +52,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    repositories {
+
+        maven {url 'http://repo1.maven.org/maven2' }
+
     }
 }
 
@@ -29,20 +69,24 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     compile 'com.android.support:support-v4:25.1.1'
-
     testCompile 'junit:junit:4.12'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.github.markzhai:blockcanary-android:1.5.0'
-//    compile 'com.github.markzhai:blockcanary-android:1.5.0'
-//
-//    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
-//    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
-//    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
+    //    compile 'com.github.markzhai:blockcanary-android:1.5.0'
+    //
+    //    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+    //    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
+    //    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
+    //    compile 'com.tencent.tbs.tbssdk:sdk:43697'
+    compile files('libs/tbs_sdk_thirdapp_v3.6.0.1310_43612_sharewithdownload_withoutGame_obfs_20180706_163319.jar')
 }
 
 ext {
     PUBLISH_GROUP_ID = 'cn.yipianfengye.android'
     PUBLISH_ARTIFACT_ID = 'zxing-library'
     PUBLISH_VERSION = '2.2'
+}
+repositories {
+    google()
 }
 
