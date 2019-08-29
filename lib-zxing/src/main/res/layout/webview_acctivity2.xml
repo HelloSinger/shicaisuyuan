@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:background="@color/contents_text" />
 
-    <com.uuzuche.lib_zxing.LoadingProgress
+    <com.haier.recognition.LoadingProgress
         android:id="@+id/loadingprogress"
         android:layout_width="80px"
         android:layout_height="80px"

@@ -25,6 +25,7 @@ public class WebViewActivity extends AppCompatActivity {
     private ImageView imageView;
     private ImageView iv_bg;
     private LoadingProgress loading;
+    private  Boolean isFirst =true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +63,12 @@ public class WebViewActivity extends AppCompatActivity {
                 //设定加载开始的操作
                 // 如可以得到当前的URL
                 //current_url=view.getUrl();
-                loading.setVisibility(View.VISIBLE);
-                iv_bg.setVisibility(View.VISIBLE);
+                if(isFirst){
+                    loading.setVisibility(View.VISIBLE);
+                    iv_bg.setVisibility(View.VISIBLE);
+                    isFirst= false;
+                }
+
                 Log.d("web", "开始加载");
             }
 

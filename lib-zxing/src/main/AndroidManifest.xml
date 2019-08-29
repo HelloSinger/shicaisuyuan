@@ -87,7 +87,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.WebViewActivityX5" />
+        <activity android:name=".activity.WebViewActivity" />
 
         <activity android:name=".activity.ResultActivity" />
     </application>
