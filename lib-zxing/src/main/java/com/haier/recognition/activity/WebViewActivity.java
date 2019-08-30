@@ -132,4 +132,9 @@ public class WebViewActivity extends AppCompatActivity {
         mWebView.loadUrl(url);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        isFirst= true;
+    }
 }
